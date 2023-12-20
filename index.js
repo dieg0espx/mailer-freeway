@@ -33,8 +33,8 @@ app.post('/email', async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'tecnodael@gmail.com',
-        pass: 'vukwfmwdykcexgbo'
+        user: 'freewayscuba@gmail.com',
+        pass: 'cfexinviycvrkmyj'
       }
     });
 
@@ -51,7 +51,7 @@ app.post('/email', async (req, res) => {
 
     const customerMailOptions = {
       from: 'Freeway Scuba Diving',
-      to: ['tecnodael@gmail.com', email.toLowerCase()],
+      to: ['freewayscuba@gmail.com', email.toLowerCase(), 'tecnodael@gmail.com'],
       subject: 'Booking Confirmation',
       template: 'notification',
       context: {
