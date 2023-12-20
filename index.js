@@ -51,7 +51,7 @@ app.post('/email', async (req, res) => {
 
     const customerMailOptions = {
       from: 'Freeway Scuba Diving',
-      to: ['freewayscuba@gmail.com', email.toLowerCase(), 'tecnodael@gmail.com'],
+      to: ['freewayscuba@gmail.com', email.toLowerCase()],
       subject: 'Booking Confirmation',
       template: 'notification',
       context: {
